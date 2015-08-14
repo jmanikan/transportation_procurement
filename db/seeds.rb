@@ -8,13 +8,13 @@
 
 user = [
   {
-    name: "Christopher Booty",
+    company: "Christopher Booty",
     email: "chris@example.com",
     password: "password",
     password_confirmation: "password"
   },
   {
-    name: "Paul Bamberg",
+    company: "Paul Bamberg",
     email: "paul@example.com",
     password: "password",
     password_confirmation: "password"
