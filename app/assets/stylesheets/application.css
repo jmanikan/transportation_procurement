@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+.navbar {
+  background-color: #5872A3;
+}
+
+.jumbotron {
+  background: url("images/clouds.png");
+  background-size: cover;
+}
+
+.cl-logo {
+  margin-left: 185px;
+}
