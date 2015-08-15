@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyString
+  destination: MyString
+  mode_of_transport: MyString
+  equipment_type: MyString
+  minimum_commitment: 1
+  maximum_commitment: 1
+  cost: 1
+
+two:
+  origin: MyString
+  destination: MyString
+  mode_of_transport: MyString
+  equipment_type: MyString
+  minimum_commitment: 1
+  maximum_commitment: 1
+  cost: 1

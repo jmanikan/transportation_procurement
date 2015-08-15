@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150814121825) do
+ActiveRecord::Schema.define(version: 20150815034447) do
+
+  create_table "lanes", force: :cascade do |t|
+    t.string   "origin"
+    t.string   "destination"
+    t.string   "mode_of_transport"
+    t.string   "equipment_type"
+    t.integer  "minimum_commitment"
+    t.integer  "maximum_commitment"
+    t.integer  "cost"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "company"
