@@ -1,2 +1,0 @@
-class LaneController < ApplicationController
-end
