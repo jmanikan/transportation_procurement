@@ -9,6 +9,9 @@
       <%= f.label :company %>
       <%= f.text_field :company, class: 'form-control' %>
 
+      <%= f.label :role %>
+      <%= f.select :role, ['Carrier', 'Shipper']%>
+
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
 

@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815035126) do
+ActiveRecord::Schema.define(version: 20150818033719) do
 
-  create_table "bids", force: :cascade do |t|
-    t.integer  "amount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
+  # create_table "bids", force: :cascade do |t|
+  #   t.integer  "amount"
+  #   t.datetime "created_at", null: false
+  #   t.datetime "updated_at", null: false
+  # end
+  #
   # create_table "lanes", force: :cascade do |t|
   #   t.string   "origin"
   #   t.string   "destination"
@@ -30,15 +30,16 @@ ActiveRecord::Schema.define(version: 20150815035126) do
   #   t.datetime "created_at",         null: false
   #   t.datetime "updated_at",         null: false
   # end
-  #
-  # create_table "users", force: :cascade do |t|
-  #   t.string   "company"
-  #   t.string   "email"
-  #   t.datetime "created_at",      null: false
-  #   t.datetime "updated_at",      null: false
-  #   t.string   "password_digest"
-  #   t.string   "remember_digest"
-  # end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "company"
+    t.string   "email"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
+    t.string   "remember_digest"
+    t.string   "role"
+  end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
 
