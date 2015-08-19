@@ -13,24 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150818033719) do
 
-  # create_table "bids", force: :cascade do |t|
-  #   t.integer  "amount"
-  #   t.datetime "created_at", null: false
-  #   t.datetime "updated_at", null: false
-  # end
-  #
-  # create_table "lanes", force: :cascade do |t|
-  #   t.string   "origin"
-  #   t.string   "destination"
-  #   t.string   "mode_of_transport"
-  #   t.string   "equipment_type"
-  #   t.integer  "minimum_commitment"
-  #   t.integer  "maximum_commitment"
-  #   t.integer  "cost"
-  #   t.datetime "created_at",         null: false
-  #   t.datetime "updated_at",         null: false
-  # end
-
   create_table "users", force: :cascade do |t|
     t.string   "company"
     t.string   "email"
