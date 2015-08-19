@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
+  has_many :user_shipments
+  has_many :shipments, through: :user_shipments
+
   attr_accessor :remember_token
+
   before_save { self.email = email.downcase }
   validates :company,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
